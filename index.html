@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Website</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="food.css" />
+</head>
+<body>
+  <header>
+    <h3 class="logo">Food Website</h3>
+    <input type="checkbox" id="checkbox-toggle" />
+    <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#special">Special</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#food-menu">Food Menu</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#add-to-cart">Add To Cart</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="switch_theme" aria-label="Toggle dark/light mode">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        class="icon-sun"
+      >
+        <path
+          d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        class="icon-moon"
+      >
+        <path
+          d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+        />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-container">
+      <div class="home-data">
+        <h1 class="home-title">Tasty food</h1>
+        <h2 class="home-subtitle">
+          Try the best food of <br />
+          the week.
+        </h2>
+        <a href="#food-menu" class="button">View Menu</a>
+      </div>
+      <img
+        src="https://github.com/Samaelish/Website-Restaurant-Light-Dark-Mode/blob/main/assets/img/home.png?raw=true"
+        alt="Tasty Food"
+        class="home-img"
+      />
+    </div>
+  </section>
+
+  <!-- Special Section -->
+  <section class="special" id="special">
+    <div class="container special-container">
+      <div class="special-header">
+        <p class="special-subtitle">Limited Time Offers</p>
+        <h2 class="special-title">Seasonal Specials</h2>
+        <p class="special-description">
+          Indulge in our chef's seasonal creations, featuring premium
+          ingredients at their peak freshness. These limited-time offerings
+          showcase innovative flavor combinations.
+        </p>
+      </div>
+      <div class="special-grid">
+        <div class="special-item">
+          <div class="special-item-header">
+            <div>
+              <h3 class="special-item-title">Summer Harvest Burger</h3>
+              <p class="special-item-subtitle">Available until September 30th</p>
+            </div>
+            <div class="special-item-price">$16.95</div>
+          </div>
+          <div class="special-item-features">
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>Grass-fed beef patty with heirloom tomatoes</span>
+            </div>
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>Fresh burrata cheese and basil pesto</span>
+            </div>
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>Balsamic reduction and arugula</span>
+            </div>
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>Served on a toasted ciabatta bun</span>
+            </div>
+          </div>
+          <div class="special-item-footer">
+            <a href="#" class="btn btn-secondary">Order Now</a>
+            <div class="special-item-badge">Limited Edition</div>
+          </div>
+        </div>
+        <div class="special-item">
+          <div class="special-item-header">
+            <div>
+              <h3 class="special-item-title">Artisanal Meal Deal</h3>
+              <p class="special-item-subtitle">Perfect for sharing</p>
+            </div>
+            <div class="special-item-price">$29.95</div>
+          </div>
+          <div class="special-item-features">
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>Two signature burgers of your choice</span>
+            </div>
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>Large truffle parmesan fries to share</span>
+            </div>
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>Two craft sodas or iced teas</span>
+            </div>
+            <div class="special-item-feature">
+              <i class="fas fa-check"></i>
+              <span>One dessert to share</span>
+            </div>
+          </div>
+          <div class="special-item-footer">
+            <a href="#" class="btn btn-secondary">Order Now</a>
+            <div class="special-item-badge">Best Value</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Section -->
+  <section class="popular" id="popular">
+    <h3 class="section-subtitle">Our Dishes</h3>
+    <h1 class="section-title">Popular Dishes</h1>
+
+    <div class="dish-container">
+      <div class="dish-card">
+        <img
+          src="https://th.bing.com/th/id/OIP.g_EYshV4TBrKFonMmN2KEgHaE7?w=265&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          alt="Burger"
+        />
+        <h3>Burger</h3>
+        <div class="stars">★★★★★</div>
+        <div class="price">
+          $15.99 
+        </div>
+        <button class="add-to-cart-btn" data-name="Burger" data-price="15.99">Add To Cart</button>
+      </div>
+
+      <div class="dish-card">
+        <img
+          src="https://th.bing.com/th/id/OIP.mL_jcJr_MKr4R3I3IOqpzQHaE8?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          alt="Fries"
+        />
+        <h3>Fries</h3>
+        <div class="stars">★★★★★</div>
+        <div class="price">
+          $5.99 
+        </div>
+        <button class="add-to-cart-btn" data-name="Fries" data-price="5.99">Add To Cart</button>
+      </div>
+
+      <div class="dish-card">
+        <img
+          src="https://th.bing.com/th/id/OIP.eorVTCrqylud5WldcMDhhAHaE7?w=239&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          alt="Hot Dog"
+        />
+        <h3>Hot Dog</h3>
+        <div class="stars">★★★★★</div>
+        <div class="price">
+          $8.99 
+        </div>
+        <button class="add-to-cart-btn" data-name="Hot Dog" data-price="8.99">Add To Cart</button>
+      </div>
+
+      <div class="dish-card">
+        <img
+          src="https://th.bing.com/th/id/OIP.T03aJagv5g4JwoG0Di4gFwHaEb?w=281&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          alt="Pizza"
+        />
+        <h3>Pizza</h3>
+        <div class="stars">★★★★★</div>
+        <div class="price">
+          $12.99 
+        </div>
+        <button class="add-to-cart-btn" data-name="Pizza" data-price="12.99">Add To Cart</button>
+      </div>
+
+      <div class="dish-card">
+        <img
+          src="https://th.bing.com/th/id/OIP.dEyEvqfGH62TNJfiOrLy2gHaE8?w=247&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          alt="Sandwich"
+        />
+        <h3>Sandwich</h3>
+        <div class="stars">★★★★★</div>
+        <div class="price">
+          $10.99 
+        </div>
+        <button class="add-to-cart-btn" data-name="Sandwich" data-price="10.99">Add To Cart</button>
+      </div>
+
+      <div class="dish-card">
+        <img
+          src="https://th.bing.com/th/id/OIP.IZLb-cg_WQmt9erMSDbE8AHaE8?w=260&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          alt="Cheese"
+        />
+        <h3>Cheese</h3>
+        <div class="stars">★★★★★</div>
+        <div class="price">
+          $9.99
+        </div>
+        <button class="add-to-cart-btn" data-name="Cheese" data-price="9.99">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Menu Section -->
+  <section class="food-menu" id="food-menu">
+    <h3 class="section-subtitle">Choose Your Favorite</h3>
+    <h1 class="section-title">Our Menu</h1>
+
+ <div class="food-container">
+  <div class="food-item">
+    <img
+      src="https://th.bing.com/th/id/OIP.ilKEZ1mRXHNSkinwYpnevwHaE7?w=208&h=138&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      alt="Grilled Chicken Bowl"
+    />
+    <h3>Grilled Chicken Bowl</h3>
+    <p>$12.99</p>
+    <button class="add-to-cart-btn" data-name="Grilled Chicken Bowl" data-price="12.99">Add To Cart</button>
+  </div>
+
+  <div class="food-item">
+    <img
+      src="https://th.bing.com/th/id/OIP.1arYcLj0vUMBgPX9C7KgPAHaF1?w=208&h=164&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      alt="Pasta Alfredo"
+    />
+    <h3>Pasta Alfredo</h3>
+    <p>$10.49</p>
+    <button class="add-to-cart-btn" data-name="Pasta Alfredo" data-price="10.49">Add To Cart</button>
+  </div>
+
+  <div class="food-item">
+    <img
+      src="https://th.bing.com/th/id/OIP.WsOAYm77A30PU56yUkIUygHaLG?w=128&h=192&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      alt="Spicy Tuna Sushi"
+    />
+    <h3>Spicy Tuna Sushi</h3>
+    <p>$14.25</p>
+    <button class="add-to-cart-btn" data-name="Spicy Tuna Sushi" data-price="14.25">Add To Cart</button>
+  </div>
+
+  <div class="food-item">
+    <img
+      src="https://th.bing.com/th/id/OIP.zgce7Ka6FuZgXmR8v4F6OQHaJ4?w=208&h=277&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      alt="Paneer Tikka Wrap"
+    />
+    <h3>Paneer Tikka Wrap</h3>
+    <p>$8.75</p>
+    <button class="add-to-cart-btn" data-name="Paneer Tikka Wrap" data-price="8.75">Add To Cart</button>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Review Section -->
+  <section class="review" id="review">
+    <h3 class="section-subtitle">Customer Feedback</h3>
+    <h1 class="section-title">What Our Customers Say</h1>
+
+    <div class="review-container">
+      <div class="review-card">
+        <img
+          src="https://i.pravatar.cc/80?img=1"
+          alt="Customer 1"
+          class="review-avatar"
+        />
+        <h3>John Doe</h3>
+        <p>Delicious food and friendly staff! Highly recommend.</p>
+      </div>
+      <div class="review-card">
+        <img
+          src="https://i.pravatar.cc/80?img=2"
+          alt="Customer 2"
+          class="review-avatar"
+        />
+        <h3>Jane Smith</h3>
+        <p>The best burger I've ever had! Will come back for more.</p>
+      </div>
+      <div class="review-card">
+        <img
+          src="https://i.pravatar.cc/80?img=3"
+          alt="Customer 3"
+          class="review-avatar"
+        />
+        <h3>Mike Johnson</h3>
+        <p>Great atmosphere and tasty dishes. A must-try place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add to Cart Section -->
+  <section class="add-to-cart" id="add-to-cart">
+    <h2>Add To Cart</h2>
+    <div class="cart-container">
+      <ul id="cart-items" class="cart-items"></ul>
+      <div class="cart-total">
+        Total: $<span id="cart-total">0.00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section class="order" id="order">
+    <h2>Order Form</h2>
+    <form id="order-form" class="order-form">
+      <label for="customer-name">Name</label>
+      <input
+        type="text"
+        id="customer-name"
+        name="customer-name"
+        placeholder="Enter your name"
+        required
+      />
+      <label for="customer-email">Email</label>
+      <input
+        type="email"
+        id="customer-email"
+        name="customer-email"
+        placeholder="Enter your email"
+        required
+      />
+      <label for="customer-address">Address</label>
+      <input
+        type="text"
+        id="customer-address"
+        name="customer-address"
+        placeholder="Enter your address"
+        required
+      />
+      <button type="submit" class="btn btn-primary">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Have questions or feedback? Reach out to us!
+    </p>
+    <form id="contact-form" class="contact-form">
+      <label for="contact-name">Name</label>
+      <input
+        type="text"
+        id="contact-name"
+        name="contact-name"
+        placeholder="Your name"
+        required
+      />
+      <label for="contact-email">Email</label>
+      <input
+        type="email"
+        id="contact-email"
+        name="contact-email"
+        placeholder="Your email"
+        required
+      />
+      <label for="contact-message">Message</label>
+      <textarea
+        id="contact-message"
+        name="contact-message"
+        placeholder="Your message"
+        required
+      ></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Food Ordering Website. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+  </html>
